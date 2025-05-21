@@ -1,68 +1,94 @@
-Fullstack Task Manager (MERN)
-Overview
-The Cloud-Based Task Manager is a web application designed to streamline team task management. Built using the MERN stack (MongoDB, Express.js, React, and Node.js), this platform provides a user-friendly interface for efficient task assignment, tracking, and collaboration. The application caters to administrators and regular users, offering comprehensive features to enhance productivity and organization.
+🗂️ Task Management System Web Application
+📌 Overview
+The Task Management System Web Application is a full-stack project designed to streamline the process of creating, assigning, tracking, and managing tasks within a team or organization. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), the system emphasizes real-time updates, role-based access, and collaborative task management.
 
-Why/Problem?
-In a dynamic work environment, effective task management is crucial for team success. Traditional methods of task tracking through spreadsheets or manual systems can be cumbersome and prone to errors. The Cloud-Based Task Manager aims to address these challenges by providing a centralized platform for task management, enabling seamless collaboration and improved workflow efficiency.
+🚀 Features
+Task Lifecycle Management: Create, read, update, and delete tasks with status indicators like To-Do, In Progress, and Completed.
 
-Background:
-With the rise of remote work and dispersed teams, there is a growing need for tools that facilitate effective communication and task coordination. The Cloud-Based Task Manager addresses this need by leveraging modern web technologies to create an intuitive and responsive task management solution. The MERN stack ensures scalability, while the integration of Redux Toolkit, Headless UI, and Tailwind CSS enhances user experience and performance.
+Role-Based Access Control (RBAC): Define permissions for Admins, Managers, and Team Members.
 
-Admin Features:
-User Management:
+Real-Time Dashboard: Instantly reflects task updates using Redux Toolkit and React state management.
 
-Create admin accounts.
-Add and manage team members.
-Task Assignment:
+Secure Authentication: JWT-based authentication ensures user session integrity.
 
-Assign tasks to individual or multiple users.
-Update task details and status.
-Task Properties:
+User Collaboration: Task comments and progress logs promote team communication.
 
-Label tasks as todo, in progress, or completed.
-Assign priority levels (high, medium, normal, low).
-Add and manage sub-tasks.
-Asset Management:
+Responsive UI: Optimized for desktop and mobile using Tailwind CSS.
 
-Upload task assets, such as images.
-User Account Control:
+🛠️ Tech Stack
+Layer	Technologies
+Frontend	React.js, Tailwind CSS, Redux
+Backend	Node.js, Express.js
+Database	MongoDB, Mongoose
+Authentication	JWT (JSON Web Token)
+API Testing	Postman
+Version Control	Git, GitHub
 
-Disable or activate user accounts.
-Permanently delete or trash tasks.
-User Features:
-Task Interaction:
+📁 Project Structure
+bash
+Copy
+Edit
+/client       → React frontend
+/server       → Node.js + Express backend
+Client
+components/ – Reusable UI elements like Navbar, TaskCard, Modal.
 
-Change task status (in progress or completed).
-View detailed task information.
-Communication:
+pages/ – Views such as Login, Dashboard, Admin Panel.
 
-Add comments or chat to task activities.
-General Features:
-Authentication and Authorization:
+redux/ – Redux slices and store configuration.
 
-User login with secure authentication.
-Role-based access control.
-Profile Management:
+services/ – Axios modules for API communication.
 
-Update user profiles.
-Password Management:
+Server
+routes/ – RESTful API endpoint definitions.
 
-Change passwords securely.
-Dashboard:
+controllers/ – Logic for handling tasks, authentication, users.
 
-Provide a summary of user activities.
-Filter tasks into todo, in progress, or completed.
-Technologies Used:
-Frontend:
+models/ – MongoDB schemas for Users and Tasks.
 
-React (Vite)
-Redux Toolkit for State Management
-Headless UI
-Tailwind CSS
-Backend:
+middleware/ – Authentication, error handling, and role check.
 
-Node.js with Express.js
-Database:
+config/ – Environment and database setup.
 
-MongoDB for efficient and scalable data storage.
-The Cloud-Based Task Manager is an innovative solution that brings efficiency and organization to task management within teams. By harnessing the power of the MERN stack and modern frontend technologies, the platform provides a seamless experience for both administrators and users, fostering collaboration and productivity.
+🔐 Security Highlights
+Passwords hashed using bcrypt.
+
+Token-based access with session expiration.
+
+Role middleware to restrict sensitive operations.
+
+Input sanitization to prevent injection attacks.
+
+✅ Key Modules
+Authentication: Register/Login, JWT token handling.
+
+Task Manager: CRUD operations, filtering, and real-time updates.
+
+Admin Dashboard: User role management and global task view.
+
+Notification System: Deadline alerts and update tracking.
+
+🧪 Testing
+Type	Tools Used
+Unit Testing	Jest, React Testing Library
+API Testing	Postman
+UI Testing	Manual testing with DevTools
+
+🖥️ Screenshots
+Dashboard View: Task overview with real-time updates.
+
+Admin Panel: Manage users and roles.
+
+Task Modal: Create or edit tasks with priority and deadlines.
+
+🌱 Future Enhancements
+Mobile App Integration
+
+Analytics Dashboard
+
+Email Notifications
+
+Export/Import Task Logs
+
+📖 Conclusion
+This project demonstrates how a robust, scalable task management platform can be built using the MERN stack. It solves common pain points in project coordination and enhances team productivity through efficient workflows and modern UI/UX design.
